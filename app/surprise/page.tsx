@@ -307,7 +307,7 @@ export default function SurprisePage() {
            <div className="max-w-[90rem] mx-auto relative z-10">
               <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-14 w-full">
                  {(() => {
-                    const SCRAPBOOK_ITEMS = [];
+                    const SCRAPBOOK_ITEMS: Array<{type: string, src?: string, text?: string, bg?: string}> = [];
                     WALL_IMAGES.forEach((src, idx) => {
                        SCRAPBOOK_ITEMS.push({ type: 'image', src });
                        if (idx === 1) SCRAPBOOK_ITEMS.push({ type: 'note', text: "Good times ♡♡", bg: "bg-[#fff0f6]" });
